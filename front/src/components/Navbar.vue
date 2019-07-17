@@ -6,32 +6,65 @@
 	<a href="/" onclick="_gaq.push(['_trackEvent', 'Home', 'click_header_logo', 'Clozette Header Logo']);"><img src="//cimg.clozette.co.id/img/static/cid-new-logo.png"></a>
      <div class="header clearfix">
 </div>
-        <nav>
-          <ul class="nav nav-pills pull-left">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Insider</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-          </ul>
-        </nav>
+    <nav class="nav">
+    <!-- Menu akan memiliki class is-active bila model active isinya sesuai. -->
+    <!-- Untuk mencegah link mengarahkan halaman kita gunakan modifier 'prevent'. -->
+    <!-- Ketika menu di klik, method setActive yang telah kita definisikan di Vue
+        akan terpanggil dan mengubah nilai dari 'active' -->
+    <a
+      class="menu"
+      href="#"
+      v-bind:class="{'is-active': active === 'home'}"
+      v-on:click.prevent="setActive('home')"
+    >Home</a>
+    <a
+      class="menu"
+      href="#"
+      v-bind:class="{'is-active': active === 'portfolio'}"
+      v-on:click.prevent="setActive('portfolio')"
+    >Portfolio</a>
+    <a
+      class="menu"
+      href="#"
+      v-bind:class="{'is-active': active === 'shop'}"
+      v-on:click.prevent="setActive('shop')"
+    >Shop</a>
+    <a
+      class="menu"
+      href="#"
+      v-bind:class="{'is-active': active === 'about'}"
+      v-on:click.prevent="setActive('about')"
+    >About</a>
+    <a
+      class="menu"
+      href="#"
+      v-bind:class="{'is-active': active === 'contact'}"
+      v-on:click.prevent="setActive('contact')"
+    >Contact</a>
+  </nav>
+
+  <div class="info">
+  <!-- Tanda kurung kurawal ganda (atau 'mustache') akan diganti oleh
+      isi dari 'active'. Akan otomatis berubah bila ada perubahan model 'active' -->
+  Anda memilih <span class="selected">{{ active }}</span>
+  </div>
+</div>
       </div> 
+       <div class="main">
+        <div class="content">
+        
+            <a href="/" ><img src="//cimg.clozette.co.id/img/community/about_v2/masthead.jpg"></a>
+        
+        </div>
+     </div>
   <br/>
    <br/>
     <br/>
-    <div>
-    <div class="main">
-        <div class="content">
-            <h2>Content</h2>
-            <p>Content Web</p>
-        </div>
-     </div> 
-        <div class="sidebar">
-            <h2>Righr Sidebar</h2>
-        </div>
-  
-        <div class="clear"></div>
-  
-    </div>
+    
 <footer>
+  <div class="clear"></div>
+<div class="footer">
+<div class="about-menu-div">
 <ul>
   <li>
     <span>ABOUT</span>
@@ -77,39 +110,41 @@
     <li><a href="http://clozette.glam.jp" target="_blank">Glam Clozette Japan</a></li>
     <li><a target="_BLANK" href="http://www35t.glam.com/jsadclick.act?8^2^a93ea9642e37e88feacbc45148728555^115174139528665382311^1646228586^0^/^888x10^204571623^25299855^-1^-1^-1^204571623^0^0^402865931883653^^^0^^SG^0^0^0^^SINGAPORE^5000^0^None^0^^@http://www.glam.com"><img src="http://indo.zettecdn.com/static/mood-glam.gif" width="110" height="16"></a></li>
     <li><a href="/info/copyright">Copyright</a></li>
+     
 </ul>
+<br>
 
-
-</footer>
-  <div class="footer">
-        <div class="about-menu-div">
+    <div class="footer-logo">
+		<div class="footer-logo-bottom">
+		<!-- <div class="footer-logo-bottom-left"> -->
+    <i class="fas fa-align-left"></i>
+		<a href="/"><img src="//cimg-indo.clozette.co.id/static/clozetteIndo-logo-reverse.png"></a>
+		<!-- <div class="footer-logo-bottom-right"> -->
+    <!-- </div> -->
+    
+     
+    </div>
+		</div> 
+    <i class="fas fa-align-right"></i>
+          <span><p><a style= "fas fa-align-right"> Palma One Building, 10th Floor, 
+          Suite 1004 Jl. HR Rasuna Said Kav. X2 No. 4, Jakarta 12950, Indonesia</a></p></span>
+          <a style="fas fa-align-right">Copyright © <!---->2016  Clozette Pte Ltd</a>
   </div>
     </div>
-  <div class="footer-logo">
-		<div class="footer-logo-bottom">
-			<div class="footer-logo-bottom-left">
-				<a href="/"><img src="//cimg-indo.clozette.co.id/static/clozetteIndo-logo-reverse.png"></a>
-			</div>
-			<div class="footer-logo-bottom-right">
-					<p style="margin-top:-10px;">Palma One Building, 10th Floor, Suite 1004 Jl. HR Rasuna Said Kav. X2 No. 4, Jakarta 12950, Indonesia</p>
-					<p style="float:right;margin-top:-37px;">Copyright © <!---->2016  Clozette Pte Ltd</p>
-					</div>
-		</div>
   
+</footer>
 	</div>
 
- </div>
-</div>
 
 </template>
 <script>
-
+  
 </script>
 <style>
 *{margin:0}
   
 body {
-            font-family:arial,segoe ui;   
+font-family:arial,segoe ui;   
 }
   
 .wrap {
@@ -119,16 +154,17 @@ body {
              
 .header {
             width:auto;
-            background:#09C;
-            padding:20px;
-            color:#fff;
+            background:#fff;
+            padding:10px;
+            color:#000;
 }   
-    .clear {clear:both}   
+
+.clear {clear:both}   
 .nav {
             width:auto;
-            background:#000;
+            background:#fff;
             padding:5px 20px;
-            color:#FFF;
+            color:#000;
 }    
 .main {
             width:100%;
@@ -136,24 +172,18 @@ body {
 }
 .content {
             float:left;
-            width:66%;
-            background:#FF9;
+            width:100%;
+            background:#FFF;
             padding:2%; 
             min-height:400px;
 }
-.sidebar {
-            float:right;
-            width:26%;
-            background:#6F9;
-            padding:2%;
-  
-}          
-.clear {clear:both}
-.footer {
+      
+.footer{
+            grid-area: footer;
             width:auto;
             height:auto;
             padding:5px 10px;
-            background:#333;
+            background:#000;
             color:#fff;
 }
 ul {
@@ -163,13 +193,20 @@ ul {
     grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(5, auto);
 }
-img { 
+img{ 
     width:150px;
     justify-self:center;
 }
-footer {
-    grid-area: footer;
-    /* Properti lain tidak ditulis agar lebih singkat */
+.comm-about img {
+    border: 0;
 }
+
+.img {
+    max-width: 1000%;
+}
+img, a:hover {
+    text-decoration: none;
+}
+    /* Properti lain tidak ditulis agar lebih singkat */
 </style>
 
