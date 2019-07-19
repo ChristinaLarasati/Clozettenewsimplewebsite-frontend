@@ -1,3 +1,4 @@
+<!--Footer-->
 <template>
 
     <div class="container" id="app">
@@ -7,59 +8,12 @@
     <img src="//cimg.clozette.co.id/img/static/cid-new-logo.png"></a>
      <div class="header clearfix">
 </div>
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Input</a>
-            <ul>
-                <li><a href="#">Anggota</a></li>
-                <li><a href="#">Buku</a></li>
-                <li><a href="#">Kategori Buku</a></li>
-            </ul>
-        </li>
-        <li><a href="#">Transaksi</a>
-            <ul>
-                <li><a href="#">Peminjaman</a></li>
-                <li><a href="#">Pengembalian</a></li>
-            </ul>
-        </li>
-        <li><a href="#" onClick="return confirm ('Yakin?')">Logout</a></li>
-    </ul>
-</nav>
-    <!-- <nav class="nav">
-    <a
-      class="menu"
-      href="#"
-      v-bind:class="{'is-active': active === 'home'}"
-      v-on:click.prevent="setActive('home')"    
-    >Home</a>
-    <a
-      class="menu"
-      href="#"
-      v-bind:class="{'is-active': active === 'insider'}"
-      v-on:click.prevent="setActive('insider')"
-    >Insider</a>
-    <a
-      class="menu"
-      href="#"
-      v-bind:class="{'is-active': active === 'tutorial'}"
-      v-on:click.prevent="setActive('tutorial')"
-    >Tutorial</a>
-    <a
-      class="menu"
-      href="#"
-      v-bind:class="{'is-active': active === 'contact'}"
-      v-on:click.prevent="setActive('contact')"
-    >Article</a>
-  </nav> -->
+
   
 </div>
       </div> 
        <div class="main">
         <div class="content">
-        
-            <a href="/" ><img src="//cimg.clozette.co.id/img/community/about_v2/masthead.jpg" width="28" height="28"></a>
-        
         </div>
      </div>
   <br/>
@@ -67,7 +21,7 @@
     <br/>
     
 <footer>
-  <div class="clear"></div>
+<div class="clear"></div>
 <div class="footer">
 <div class="about-menu-div">
 <ul>
@@ -122,19 +76,19 @@
         <div class="footer-logo-bottom">
 			<div class="footer-logo-bottom-left">
             
-				<a href="/"><img src="//cimg-indo.clozette.co.id/static/clozetteIndo-logo-reverse.png"></a>
-                <div class="footer-logo-bottom-right">
-			<p style="margin-top:-10px;">Palma One Building, 10th Floor, Suite 1004 Jl. HR Rasuna Said Kav. X2 No. 4, Jakarta 12950, Indonesia</p>
+				<a href="/"><img src="//cimg-indo.clozette.co.id/static/clozetteIndo-logo-reverse.png" style="width:400px;"></a>
+      <li><a target="_blank"></a></li>
+      <div class="footer-logo-bottom-right">
+			
+      <p style="text-align:right;margin-top:-10px;">Palma One Building, 10th Floor, Suite 1004 Jl. HR Rasuna Said Kav. X2 No. 4, Jakarta 12950, Indonesia</p>
 			<p style="float:right;margin-top:-37px;">Copyright © <!---->2016  Clozette Pte Ltd</p>
 			</div>
-            </div>
-           
-			
-			 
-		</div>
-  </div>
-  </div>
-  
+</div>	 
+</div>
+<i class="icon-arrow-up2"></i> 
+</div>
+
+</div>
 </footer>
 	</div>
 
@@ -152,14 +106,17 @@ font-family:arial,segoe ui;
      font-family:Arial, Helvetica, sans-serif;
      color:#000;
 }
-  
+.gototop{
+    color: #fff;
+text-align: center;
+}
+.gototop.active {
+    visibility: visible;
+}
 .wrap {
             width:1000px;
             margin:0 auto;          
-} 
-
-  
-             
+}            
 .header {
             width:auto;
             background:#fff;
@@ -194,6 +151,7 @@ font-family:arial,segoe ui;
             font-weight: normal;
             font-size: 12px;
             font-family: "AvenirNext-Regular", sans-serif;
+            border: 1px solid #FFF;
 }
 /* A link that has not been visited */
 a {

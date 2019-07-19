@@ -1692,9 +1692,11 @@ module.exports = {
 /*!***************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 //
 //
 //
@@ -1757,6 +1759,23 @@ module.exports = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -6217,7 +6236,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n*{margin:0}\nbody {\r\n     background-color:#fff;\r\n     font-family:Arial, Helvetica, sans-serif;\r\n     color:#000;\n}\nnav {\r\n     margin:auto;\r\n     text-align: center;\r\n     width: 100%;\r\n    color: #000;\r\n    font-family: franklin-cd;\r\n    font-size: 16px;\n}\nli a {\r\n  display: block;\r\n  color: white;\r\n  text-align: center;\r\n  padding: 14px 16px;\r\n  text-decoration: none;\n}\nnav ul ul {\r\n     display: none;\n}\nnav ul li:hover > \r\n    ul{\r\n    display: block;\r\n    width: 150px;\n}\nnav ul {\r\n     background: #000;\r\n     height: auto;\r\n     list-style: none;\r\n     position: relative;\r\n     display: inline-table;\r\n     width: 75%;\n}\nnav ul:after {\r\n     content: \"\"; \r\n     clear:both; \r\n     display: block;\n}\nnav ul li{\r\n     float:left;\n}\nnav ul li:hover{\r\n     background:#666;\r\n     size:inherit;\n}\nnav ul li a{\r\n     display: block;\r\n     padding: 25px;\r\n     color: #fff;\r\n     text-decoration: none;\n}\nnav ul ul{\r\n     background: #000;\r\n     border-radius: 0px;\r\n     padding: 0;\r\n     position: absolute;\r\n     top:100%;\n}\nnav ul ul li{\r\n     float:none;\r\n     border-top: 1px soild #000;\r\n     border-bottom: 1px solid #000;\r\n     position: relative;\n}\nnav ul ul li a{\r\n     padding: 10px 20px;\r\n     color: #fff;\n}\r\n    \r\n\r\n", ""]);
+exports.push([module.i, "\nbody {font-family: Arial, Helvetica, sans-serif;}\n* {box-sizing: border-box}\r\n\r\n/* Full-width input fields */\ninput[type=text], input[type=password] {\r\n  width: 15%;\r\n  padding: 15px;\r\n  margin: 5px 0 22px 0;\r\n  display: inline-block;\r\n  border: none;\r\n  background: #f1f1f1;\n}\ninput[type=text]:focus, input[type=password]:focus {\r\n  background-color: #ddd;\r\n  outline: none;\n}\nhr {\r\n  border: 1px solid #f1f1f1;\r\n  margin-bottom: 25px;\n}\r\n\r\n/* Set a style for all buttons */\nbutton {\r\n  background-color: #4CAF50;\r\n  color: white;\r\n  padding: 14px 20px;\r\n  margin: 8px 0;\r\n  border: none;\r\n  cursor: pointer;\r\n  width: 100%;\r\n  opacity: 0.9;\n}\nbutton:hover {\r\n  opacity:1;\n}\r\n\r\n/* Extra styles for the cancel button */\n.cancelbtn {\r\n  padding: 14px 20px;\r\n  background-color: #f44336;\n}\r\n\r\n/* Float cancel and signup buttons and add an equal width */\n.cancelbtn, .signupbtn {\r\n  float: left;\r\n  width: 50%;\n}\r\n\r\n/* Add padding to container elements */\n.container {\r\n  padding: 16px;\n}\r\n\r\n/* Clear floats */\n.clearfix::after {\r\n  content: \"\";\r\n  clear: both;\r\n  display: table;\n}\r\n\r\n/* Change styles for cancel button and signup button on extra small screens */\n@media screen and (max-width: 300px) {\n.cancelbtn, .signupbtn {\r\n     width: 100%;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -37715,175 +37734,168 @@ var staticRenderFns = [
         }
       }),
       _vm._v(" "),
-      _c("div", { staticClass: "header" }, [
+      _c("div", { staticClass: "logo-continer", attrs: { align: "center" } }, [
         _c(
-          "div",
-          { staticClass: "logo-continer", attrs: { align: "center" } },
+          "a",
+          {
+            attrs: {
+              href: "/",
+              onclick:
+                "_gaq.push(['_trackEvent', 'Home', 'click_header_logo', 'Clozette Header Logo']);"
+            }
+          },
           [
-            _c(
-              "a",
-              {
-                attrs: {
-                  href: "/",
-                  onclick:
-                    "_gaq.push(['_trackEvent', 'Home', 'click_header_logo', 'Clozette Header Logo']);"
-                }
-              },
-              [
-                _c("img", {
-                  attrs: {
-                    src: "//cimg.clozette.co.id/img/static/cid-new-logo.png"
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "header clearfix" }),
-            _vm._v(" "),
-            _c("nav", [
-              _c("ul", [
-                _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("HOME")])]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("INSIDER")]),
-                  _vm._v(" "),
-                  _c("ul", [
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("HIJAB")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("FASHION")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("BEUATY")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("LIFE STYLE")])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "#" } }, [_vm._v("TUTORIAL")]),
-                  _vm._v(" "),
-                  _c("ul", [
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("HIJAB")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("MAKEUP")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("SKIN CARE")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("HAIR")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("NAILS")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("DIY PROJECT")])
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "active",
-                      staticStyle: { float: "left" },
-                      attrs: { href: "/" }
-                    },
-                    [
-                      _c("img", {
-                        attrs: {
-                          src:
-                            "//cimg-indo.clozette.co.id/static/default-profile-picture_1.jpg",
-                          width: "28",
-                          height: "28"
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("ul", [
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [_vm._v("MY PROFILE")])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("CREATE NEW ARTICLE")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("li", [
-                      _c("a", { attrs: { href: "#" } }, [
-                        _vm._v("CREATE NEW POST")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: "#",
-                          onClick:
-                            "return confirm ('Are You Sure to Sign Out?')"
-                        }
-                      },
-                      [_vm._v("SIGN OUT")]
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("span", { staticClass: "glyphicon glyphicon-user" }),
-                    _vm._v(" Sign Up")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("span", { staticClass: "glyphicon glyphicon-log-in" }),
-                    _vm._v(" Login")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("div", { staticClass: "navbar-center" }, [
-                  _c("div", { staticClass: "search-container" }, [
-                    _c("form", { attrs: { action: "/action_page.php" } }, [
-                      _c("input", {
-                        attrs: {
-                          type: "text",
-                          placeholder: "Search..",
-                          name: "search"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("button", { attrs: { type: "submit" } }, [
-                        _c("i", { staticClass: "fa fa-search" })
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ])
+            _c("img", {
+              attrs: {
+                src: "//cimg.clozette.co.id/img/static/cid-new-logo.png"
+              }
+            })
           ]
-        )
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "header clearfix" }),
+        _vm._v(" "),
+        _c("form", { attrs: { action: "/action_page.php" } }, [
+          _c("div", { staticClass: "container" }, [
+            _c("h1", [_vm._v("Register")]),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "username" } }, [
+              _c("b", [_vm._v("Username")])
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "icon1" }, [
+              _c("i", {
+                staticClass: "fa fa-user",
+                attrs: { "aria-hidden": "true" }
+              })
+            ]),
+            _c("br"),
+            _vm._v(" "),
+            _c("input", {
+              attrs: {
+                type: "text",
+                placeholder: "username",
+                name: "username",
+                required: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "email" } }, [
+              _c("b", [_vm._v("Email")])
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              attrs: {
+                type: "email",
+                placeholder: "Enter Email",
+                name: "email",
+                required: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "psw" } }, [
+              _c("b", [_vm._v("Password")])
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "icon5" }, [
+              _c("i", {
+                staticClass: "fa fa-unlock",
+                attrs: { "aria-hidden": "true" }
+              })
+            ]),
+            _c("br"),
+            _vm._v(" "),
+            _c("input", {
+              attrs: {
+                type: "password",
+                placeholder: "Enter Password",
+                name: "psw",
+                required: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "kode-verifikasi" } }, [
+              _c("b", [_vm._v(" Kode Verifikasi")])
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              attrs: {
+                type: "text",
+                placeholder: "Kode Verifikasi",
+                name: "kode-verifikasi",
+                required: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "negara" } }, [
+              _c("b", [_vm._v("Negara")])
+            ]),
+            _vm._v(" "),
+            _c("select", { attrs: { name: "negara" } }, [
+              _c("option", { attrs: { value: "singapura" } }, [
+                _vm._v("Singapura")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "indonesia" } }, [
+                _vm._v("Indonesia")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "jepang" } }, [_vm._v("Jepang")])
+            ]),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "nomor-hp" } }, [
+              _c("b", [_vm._v("Nomor HP")])
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "icon3" }, [
+              _c("i", {
+                staticClass: "fa fa-phone",
+                attrs: { "aria-hidden": "true" }
+              })
+            ]),
+            _c("br"),
+            _vm._v(" "),
+            _c("input", {
+              attrs: {
+                type: "text",
+                placeholder: "Nomor HP",
+                name: "nomor-hp",
+                required: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("label", { attrs: { for: "tanggal-lahir" } }, [
+              _c("b", [_vm._v("Tanggal Lagir")])
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              attrs: {
+                type: "date",
+                placeholder: "dd/mm/yyyy",
+                name: "tanggal-lagir",
+                required: ""
+              }
+            }),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "registerbtn", attrs: { type: "submit" } },
+              [_vm._v("Register")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "container signin" }, [
+            _c("p", [
+              _vm._v("Already have an account? "),
+              _c("a", { attrs: { href: "#" } }, [_vm._v("Sign in")]),
+              _vm._v(".")
+            ])
+          ])
+        ])
       ])
     ])
   }
@@ -50176,9 +50188,7 @@ component.options.__file = "resources/js/components/Home.vue"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Home.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -50234,8 +50244,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\New folder\Laravel-Vuejs\backend-frontend\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\New folder\Laravel-Vuejs\backend-frontend\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\Frontend Clozette\backend-frontend\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\Frontend Clozette\backend-frontend\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
