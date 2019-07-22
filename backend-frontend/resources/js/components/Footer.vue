@@ -2,6 +2,9 @@
 <template>
 
     <div class="container" id="app">
+      <div class="title m-b-md">
+                    {{title}}
+                </div>
 <div class="header">
       <div class="logo-continer" align="center">
 	<a href="/" onclick="_gaq.push(['_trackEvent', 'Home', 'click_header_logo', 'Clozette Header Logo']);">
@@ -85,7 +88,6 @@
 			</div>
 </div>	 
 </div>
-<i class="icon-arrow-up2"></i> 
 </div>
 
 </div>
@@ -95,7 +97,9 @@
 
 </template>
 <script>
-  
+  export default{
+    props: ['title', 'author']
+  }
 </script>
 <style>
 *{margin:0}

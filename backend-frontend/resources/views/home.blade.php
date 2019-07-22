@@ -15,9 +15,9 @@
     <body>
         <div id="app">
         <div class="container">
-        <home></home>
+        <home :title="'{{$title}}'"></home>
         </div>
         </div>
-        <script src="{{ asset('js/app.js')}}">   </script>
+        <script src="js/app.js" type="text/javascript"></script>
     </body>
 </html>

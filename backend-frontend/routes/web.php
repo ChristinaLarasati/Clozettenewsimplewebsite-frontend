@@ -12,5 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', [
+        'title' => "An even cooler way to do the title"
+    ]
+);
 });
+Route::get('/page', function () {
+    return view('footer');
+});
+
+Route::get('/{any}', function(){
+    return view('vueapp');
+})->where('any', '.*');
